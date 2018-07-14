@@ -27,7 +27,7 @@
   height:100%;
 }
 
-.searchBox{
+.searchScroll{
   width:1%;
   height:7%;
   top: 45%;
@@ -35,10 +35,50 @@
   position:absolute;
   display: inline-block;
   background-color: white;
+  margin-left:30%;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
+.searchBox{
+  position:absolute;
+  float:left;
+  width:30%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 1;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
 .mapBox{
+  position:absolute;
+  height: 100%;
+  width:100%;
+}
+
+.search-places-input-wrapper {
+  flex: 1;
+  background: #FFFFFF;
+}
+
+.search-places-bar {
+  position: fixed;
+  width: 27.5%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
+}
+
+.search-places-bar input {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+}
+
+.locations-list-container{
+  margin-top: 5em;
 }
 
 @keyframes App-logo-spin {
