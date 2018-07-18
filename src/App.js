@@ -6,6 +6,7 @@ import MapContainer from "./components/MapContainer";
 import {GoogleApiWrapper} from 'google-maps-react';
 import Geocode from "react-geocode";
 
+
 const apiKey = 'AIzaSyCNvqo698MfJGSTnA1aednek7qyKD_hwhs';
 
 class App extends Component {
@@ -15,7 +16,8 @@ class App extends Component {
             lat: -19.932100,
             lng: -43.938072
     },
-    searchResults: []
+    searchResults: [],
+    visibleLocations: []
   }
 
   searchPlaces = query=>{
@@ -56,6 +58,10 @@ class App extends Component {
         }
   }
 
+  plotMarker = location => {
+    console.log(location);
+  }
+
   render() {
     return (
 
@@ -68,6 +74,7 @@ class App extends Component {
                 <div className="searchBox">
                   <SearchContainer
                     onSearch={this.searchPlaces}
+                    onRequireMarker={this.plotMarker}
                     locations={this.state.searchResults}
                   />
                 </div>

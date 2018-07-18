@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import SearchItem from "./SearchItem";
 
 class SearchContainer extends Component {
 
@@ -27,14 +28,15 @@ class SearchContainer extends Component {
               
         </div>
         <div className="locations-list-container">
-                <ol className="locations-list">
+                <ul className="locations-list">
 
                       {locations===undefined? '': locations.map(location => (
-                        <li key={location.place_id}>
-                          <p>{location.formatted_address}</p>
-                        </li>
+                        <SearchItem
+                          location={location}
+                          onRequireMarker={this.props.onRequireMarker}
+                        />
                       ))}                  
-                </ol>
+                </ul>
               </div>
               
       </div>
