@@ -11,7 +11,7 @@ class SearchContainer extends Component {
 
   render() {
     const {locations} = this.props;
-    locations===undefined? console.log('') : console.log(locations);
+    //locations===undefined? console.log('') : console.log(locations);
     return (
 
       <div className="search-places">
@@ -20,7 +20,7 @@ class SearchContainer extends Component {
                 <input
                   type="text"
                   onChange={this.handleSearch}
-                  placeholder="Search by area or adress"
+                  placeholder="Filter by place title"
                 />
                  
 
