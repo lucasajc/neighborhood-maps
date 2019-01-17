@@ -201,7 +201,6 @@ class App extends Component {
    */
   initMap() {
     let self = this;
-    console.log('./MapStyle.json');
 
     let map = new window.google.maps.Map(document.getElementById("map"), {
       center: { lat: -19.936, lng: -43.938072 },
