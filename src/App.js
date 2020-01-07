@@ -7,9 +7,9 @@ import SearchContainer from "./components/SearchContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsAltH } from "@fortawesome/free-solid-svg-icons";
 
-const mapsApiKey = "AIzaSyCNvqo698MfJGSTnA1aednek7qyKD_hwhs";
-const foursquareClientId = "1S5O3EQL2KG5Q5FA5YFED1ABD4MKAUB0TT5UD2141DO0POYO";
-const foursquareApiSecret = "4FGAH3CHVX2KRTKZCVYMJ4NVKPKPGN2GOTHFYCMU3UE5N4GD";
+const mapsApiKey = "";
+const foursquareClientId = "";
+const foursquareApiSecret = "";
 
 /**
  * @description renders the main component
